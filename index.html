@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Summary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Student Data Overview</p>
+        <h1>Beautiful summary dashboard</h1>
+        <p class="lead">A quick look at the CSV dataset with key statistics and a histogram of units sold.</p>
+      </div>
+      <div class="card stat">
+        <span>Total Rows</span>
+        <strong>500</strong>
+      </div>
+      <div class="card stat">
+        <span>Average Units</span>
+        <strong>50.47</strong>
+      </div>
+      <div class="card stat">
+        <span>Average Price</span>
+        <strong>51.15</strong>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Dataset Highlights</h2>
+        <ul>
+          <li>Columns: date, region, product, units, price</li>
+          <li>Regions: East, West, South, North</li>
+          <li>Units range from 1 to 100</li>
+          <li>Price range from 1.26 to 99.94</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Region Distribution</h2>
+        <div class="bars">
+          <div><span>East</span><div class="bar"><i style="width:100%"></i></div><em>142</em></div>
+          <div><span>West</span><div class="bar"><i style="width:88%"></i></div><em>125</em></div>
+          <div><span>South</span><div class="bar"><i style="width:82%"></i></div><em>117</em></div>
+          <div><span>North</span><div class="bar"><i style="width:82%"></i></div><em>116</em></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card chart">
+      <h2>Histogram</h2>
+      <img src="histogram.png" alt="Histogram of units sold" />
+    </section>
+  </main>
+</body>
+</html>
